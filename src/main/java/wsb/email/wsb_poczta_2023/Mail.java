@@ -1,6 +1,7 @@
 package wsb.email.wsb_poczta_2023;
 
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 @Data
 public class Mail {
@@ -10,4 +11,6 @@ public class Mail {
     private String subject;
 
     private String content;
+
+    private MultipartFile attachment;
 }
